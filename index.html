@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+<body>
+   <header>
+            <img src="imagen/alura.jpg" alt="logo alura">
+        </header>
+     
+        <div class="container">
+            <div class="left-column">
+              
+                <textarea id="inputText" placeholder="Ingrese el texto aquí" oninput="validarTexto(this)"></textarea>
+                <br>
+                <div class="letras minusculas">
+                    <img src="imagen/advertencia.jpg" alt="logo de advertencia">
+                    <p>solo letras minúsculas y sin acentos</p>
+                </div>
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>
+                
+            </div>
+            <div class="right-column">
+                <img id="resultImage" class="desaparece" src="imagen/muñeco.jpg" alt="Resultado">
+                <p id="resultText1" class="desaparece">Ningún mensaje fue encontrado</p>
+                <p id="resultText2" class="desaparece">Ingresa el texto que desees encriptar o desencriptar</p>
+                <textarea id="outputText" readonly></textarea>
+                <button onclick="copiarTexto()">Copiar</button>
+            </div>
+        
+            <footer>
+                <div class="social-icons">
+                    <p>2024 michel farias</p>
+                    <a href="https://www.linkedin.com/in/michel-farias-27318926a/" target="_blank">
+                        <img src="imagen/linke.jpg" alt="">
+                    </a>
+                    <a href="https://github.com/MichelJoelFarias" target="_blank">
+                       <img src="imagen/git.jpg" alt="">
+                    </a>
+                   
+                </div>
+            </footer>
+ 
+        <script src="script.js"></script>
+</body>
+</html>
